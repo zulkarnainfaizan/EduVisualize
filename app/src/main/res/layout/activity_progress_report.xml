@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    tools:context="com.example.julqa_000.eduvisualize.ProgressReport">
+
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="122dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="28dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:onClick="insertMethod"
+        android:text="insert"
+        style="@style/ButtonStyle"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.166"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="120dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="28dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:onClick="visualizeMethod"
+        android:text="visualize"
+        style="@style/DriveButtonStyle"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.753"
+        app:layout_constraintStart_toStartOf="@+id/button10" />
+
+    <EditText
+        android:id="@+id/attName"
+        android:layout_width="287dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="44dp"
+         android:background="@android:drawable/spinner_background"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/attEnroll"
+        android:layout_width="288dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="84dp"
+         android:background="@android:drawable/spinner_background"
+        android:ems="10"
+        android:hint="Enroll"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableRow
+        android:id="@+id/tablehead"
+        android:layout_width="350dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="148dp"
+        android:background="#054754"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        >
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="178dp"
+            android:layout_height="40dp"
+            android:text="Subjects"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="95dp"
+            android:layout_height="40dp"
+            android:text="Total"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="95dp"
+            android:layout_height="40dp"
+            android:text="Obtained"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <TableLayout
+        android:layout_width="350dp"
+        android:layout_height="205dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="45dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tablehead">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+
+            >
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="161dp"
+                android:layout_height="40dp"
+
+                android:text="JAVA"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/jG"
+                android:layout_width="95dp"
+                android:layout_height="40dp"
+                 android:background="@android:drawable/spinner_background"
+                android:inputType="number"
+                android:text=""
+
+                android:textSize="25px" />
+
+            <EditText
+                android:id="@+id/jA"
+                android:layout_width="95dp"
+                android:layout_height="40dp"
+                 android:background="@android:drawable/spinner_background"
+                android:inputType="number"
+                android:text=""
+
+                android:textSize="25px" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/idd1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#054754">
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="96dp"
+                android:layout_height="40dp"
+                android:text="NETWORKING"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/nG"
+                android:layout_width="96dp"
+                android:layout_height="40dp"
+                 android:background="@android:drawable/spinner_background"
+                android:inputType="number"
+
+                android:text=""
+                android:textSize="25px" />
+
+            <EditText
+                android:id="@+id/nA"
+                android:layout_width="96dp"
+                android:layout_height="40dp"
+                 android:background="@android:drawable/spinner_background"
+                android:inputType="number"
+
+                android:text=""
+                android:textSize="25px" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            >
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="96dp"
+                android:layout_height="40dp"
+
+                android:text="MULTIMEDIA"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/mG"
+                android:layout_width="96dp"
+                android:layout_height="40dp"
+                 android:background="@android:drawable/spinner_background"
+                android:inputType="number"
+
+                android:text=""
+                android:textSize="25px" />
+
+            <EditText
+                android:id="@+id/mA"
+                android:layout_width="96dp"
+                android:layout_height="40dp"
+                 android:background="@android:drawable/spinner_background"
+                android:inputType="number"
+
+                android:text=""
+                android:textSize="25px" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#054754">
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="96dp"
+                android:layout_height="40dp"
+
+                android:text="WIRELESS"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/wG"
+                android:layout_width="96dp"
+                android:layout_height="40dp"
+                 android:background="@android:drawable/spinner_background"
+                android:inputType="number"
+
+                android:text=""
+                android:textSize="25px" />
+
+            <EditText
+                android:id="@+id/wA"
+                android:layout_width="96dp"
+                android:layout_height="40dp"
+                 android:background="@android:drawable/spinner_background"
+                android:inputType="number"
+
+                android:text=""
+                android:textSize="25px" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            >
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="96dp"
+                android:layout_height="40dp"
+
+                android:text="AI"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/aG"
+                android:layout_width="96dp"
+                android:layout_height="40dp"
+                 android:background="@android:drawable/spinner_background"
+                android:inputType="number"
+
+                android:text=""
+                android:textSize="25px" />
+
+            <EditText
+                android:id="@+id/aA"
+                android:layout_width="96dp"
+                android:layout_height="40dp"
+                 android:background="@android:drawable/spinner_background"
+                android:inputType="number"
+
+                android:text=""
+                android:textSize="25px" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="253dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#054754"
+        android:text="Progress Section"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:drawable/alert_light_frame"
+    tools:context="com.example.julqa_000.eduvisualize.SyallabusStatus">
+
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="392dp"
+        android:text="insert"
+        style="@style/ButtonStyle"
+
+        android:onClick="insertMethod"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableRow
+        android:layout_width="316dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="112dp"
+        android:background="@android:color/holo_purple"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="161dp"
+            android:layout_height="match_parent"
+            android:text="SUBJECTS"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="154dp"
+            android:layout_height="match_parent"
+            android:text="PERCENTAGE"
+            android:textSize="20dp" />
+    </TableRow>
+
+
+    <TableLayout
+        android:layout_width="320dp"
+        android:layout_height="217dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="168dp"
+        android:background="@android:drawable/alert_light_frame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:color/background_light">
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="161dp"
+                android:layout_height="40dp"
+                android:background="@android:color/background_light"
+                android:text="JAVA"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/jG"
+                android:layout_width="95dp"
+                android:layout_height="40dp"
+                android:background="@android:drawable/spinner_background"
+                android:inputType="number"
+                android:text=""
+
+                android:textSize="25px" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/idd1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="96dp"
+                android:layout_height="40dp"
+                android:text="NETWORKING"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/nG"
+                android:layout_width="96dp"
+                android:layout_height="40dp"
+                android:background="@android:drawable/spinner_background"
+                android:inputType="number"
+
+                android:text=""
+                android:textSize="25px" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:color/background_light">
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="147dp"
+                android:layout_height="40dp"
+                android:background="@android:color/background_light"
+                android:text="WIRELESS"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/wG"
+                android:layout_width="96dp"
+                android:layout_height="40dp"
+                android:background="@android:drawable/spinner_background"
+                android:inputType="number"
+
+                android:text=""
+                android:textSize="25px" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="96dp"
+                android:layout_height="40dp"
+                android:text="MULTIMEDIA"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/mG"
+                android:layout_width="96dp"
+                android:layout_height="40dp"
+                android:background="@android:drawable/spinner_background"
+                android:inputType="number"
+
+                android:text=""
+                android:textSize="25px" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:color/background_light">
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="AI"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/aG"
+                android:layout_width="161dp"
+                android:layout_height="40dp"
+                android:background="@android:drawable/spinner_background"
+                android:inputType="number"
+
+                android:text=""
+                android:textSize="25px" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="287dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="44dp"
+        android:background="@android:color/holo_green_dark"
+        android:text="Syllabus Section"
+
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="440dp"
+        android:text="visualize"
+        style="@style/DriveButtonStyle"
+
+        android:onClick="syllVisualizeMethod"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
